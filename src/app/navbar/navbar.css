@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background: linear-gradient(90deg, #4bde2e 0%, #48ef9b 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(30,40,80,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 8px #0002;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  transition: max-height 0.3s;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: 1.1rem;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links a:hover {
+  color: #fffa72;
+  border-bottom: 2px solid #fffa72;
+}
+
+/* Hamburger (hidden on desktop) */
+.nav-toggle,
+.nav-toggle-label {
+  display: none;
+}
+
+/* Responsive rules */
+@media (max-width: 900px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .navbar-links {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 1rem;
+  }
+  .navbar-logo {
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+  }
+  .nav-toggle-label {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+    width: 2.1rem;
+    height: 2rem;
+  }
+  .nav-toggle-label span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 5px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, #2ede63 0%, #2ede63 100%);
+    border-radius: 0 0 18px 18px;
+  }
+  .navbar-links a {
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+  .nav-toggle:checked + .nav-toggle-label + .navbar-links {
+    max-height: 400px;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.right-flag {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px #0002;
+  background: #fff;
+  object-fit: cover;
+  border: 2px solid #ffc400;
+  margin-right: 0.2rem;
+}
+
+@media (max-width: 700px) {
+  .right-flag {
+    width: 21px;
+    height: 21px;
+  }
+}
+  

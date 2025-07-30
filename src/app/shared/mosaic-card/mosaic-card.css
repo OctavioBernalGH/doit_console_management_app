@@ -1,0 +1,52 @@
+.mosaic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 18px #2e86de1f;
+  padding: 2rem 1.1rem 1.2rem 1.1rem;
+  transition: transform 0.12s, box-shadow 0.14s;
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+  min-width: 120px;
+  min-height: 150px;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.mosaic-card:hover, .mosaic-card:focus {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 6px 26px #2e86de2f;
+  border: 2px solid #2e86de;
+}
+
+.mosaic-card-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.mosaic-card-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .mosaic-card {
+    min-width: 90px;
+    min-height: 120px;
+    padding: 1.2rem 0.6rem 0.8rem 0.6rem;
+  }
+  .mosaic-card-icon { font-size: 2.1rem; }
+  .mosaic-card-text { font-size: 1rem; }
+}
