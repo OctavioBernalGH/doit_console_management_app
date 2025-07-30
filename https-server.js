@@ -5,7 +5,7 @@ const fs = require('fs');
 const app = express();
 
 // IP y puerto deseados
-const HOST = '192.168.10.1';
+const HOST = '127.0.0.1';
 const PORT = 5858;
 
 // Detectar automáticamente la carpeta dist (Angular 17+ incluido)
