@@ -1,8 +1,26 @@
 <div class="dashboard-mosaic">
-    <app-mosaic-card icon="🖥️" [text]="'dashboard.control' | translate" route="/control" color="blue"></app-mosaic-card>
-    <app-mosaic-card icon="📖" [text]="'dashboard.stories' | translate" route="/cuentos" color="orange"></app-mosaic-card>
-    <app-mosaic-card icon="🎬" [text]="'dashboard.multimedia' | translate" route="/multimedia" color="purple"></app-mosaic-card>
-    <app-mosaic-card icon="📝" [text]="'dashboard.reports' | translate" route="/informes" color="black"></app-mosaic-card>
-    <app-mosaic-card icon="📊" [text]="'dashboard.stats' | translate" route="/estadisticas" color="gray"></app-mosaic-card>
-    <app-mosaic-card icon="ℹ️" [text]="'dashboard.info' | translate" route="/informacion" letra="black"></app-mosaic-card>
+  <app-mosaic-card route="/control" color="#358f2c">
+    <mat-icon card-icon class="mosaic-card-icon">tune</mat-icon>
+    <span class="mosaic-card-text">{{ 'dashboard.control' | translate }}</span>
+  </app-mosaic-card>
+  <app-mosaic-card route="/stories" color="#358f2c">
+    <mat-icon card-icon class="mosaic-card-icon">menu_book</mat-icon>
+    <span class="mosaic-card-text">{{ 'dashboard.stories' | translate }}</span>
+  </app-mosaic-card>
+  <app-mosaic-card route="/multimedia" color="#358f2c">
+    <mat-icon card-icon class="mosaic-card-icon">movie</mat-icon>
+    <span class="mosaic-card-text">{{ 'dashboard.multimedia' | translate }}</span>
+  </app-mosaic-card>
+  <app-mosaic-card route="/reports" color="#358f2c">
+    <mat-icon card-icon class="mosaic-card-icon">assignment</mat-icon>
+    <span class="mosaic-card-text">{{ 'dashboard.reports' | translate }}</span>
+  </app-mosaic-card>
+  <app-mosaic-card route="/stats" color="#358f2c">
+    <mat-icon card-icon class="mosaic-card-icon">bar_chart</mat-icon>
+    <span class="mosaic-card-text">{{ 'dashboard.stats' | translate }}</span>
+  </app-mosaic-card>
+  <app-mosaic-card route="/info" color="#358f2c">
+    <mat-icon card-icon class="mosaic-card-icon">info</mat-icon>
+    <span class="mosaic-card-text">{{ 'dashboard.info' | translate }}</span>
+  </app-mosaic-card>
 </div>

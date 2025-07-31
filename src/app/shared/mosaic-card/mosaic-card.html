@@ -1,5 +1,9 @@
-<a [routerLink]="route" class="mosaic-card"
-   [ngStyle]="{'background': color}" tabindex="0">
-  <div class="mosaic-card-icon" [innerHTML]="icon"></div>
-  <div class="mosaic-card-text" [ngStyle]="{'color': letra}">{{ text }}</div>
-</a>
+<div class="mosaic-card"
+     [routerLink]="route"
+     tabindex="0"
+     style="cursor:pointer;">
+  <ng-content select="[card-icon]"></ng-content>
+  <div class="mosaic-card-text">
+    <ng-content></ng-content>
+  </div>
+</div>

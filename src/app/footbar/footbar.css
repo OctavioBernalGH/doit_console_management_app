@@ -6,14 +6,13 @@
 
 footer {
   width: 100%;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+  background: linear-gradient(135deg, #62ff6f 0%, #358f2c 100%);
   color: #ecf0f1;
   text-align: center;
   padding: 1.5rem 2rem;
   font-size: 0.95rem;
   letter-spacing: 0.3px;
   margin-top: auto;
-  box-shadow: 0 -8px 32px rgba(44, 62, 80, 0.15);
   position: fixed;
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -29,25 +28,11 @@ footer::before {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+  background: linear-gradient(135deg, #62ff6f 0%, #358f2c 100%);
   background-size: 200% 100%;
   animation: shimmer 3s linear infinite;
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-footer span {
-  display: inline-block;
-  background: linear-gradient(45deg, #ecf0f1, #bdc3c7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
 
 footer:hover span {
   transform: translateY(-1px);
