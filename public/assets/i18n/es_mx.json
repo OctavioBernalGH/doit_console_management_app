@@ -1,0 +1,10 @@
+{
+  "dashboard": {
+    "control": "Control de sala",
+    "stories": "Cuentos interactivos",
+    "multimedia": "Multimedia",
+    "reports": "Reportes",
+    "stats": "Estadísticas generales",
+    "info": "Información"
+  }
+}

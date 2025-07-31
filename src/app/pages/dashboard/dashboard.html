@@ -1,8 +1,8 @@
 <div class="dashboard-mosaic">
-    <app-mosaic-card icon="🖥️" text="Control de sala" route="/control" color="blue"></app-mosaic-card>
-    <app-mosaic-card icon="📖" text="Cuentos vivenciales" route="/cuentos" color="orange"></app-mosaic-card>
-    <app-mosaic-card icon="🎬" text="Multimedia" route="/multimedia" color="purple"></app-mosaic-card>
-    <app-mosaic-card icon="📝" text="Informes" route="informes" color="black"></app-mosaic-card>
-    <app-mosaic-card icon="📊" text="Estadísticas generales" route="/estadisticas" color="gray"></app-mosaic-card>
-    <app-mosaic-card icon="ℹ️" text="Información" route="/informacion" letra="black"></app-mosaic-card>
+    <app-mosaic-card icon="🖥️" [text]="'dashboard.control' | translate" route="/control" color="blue"></app-mosaic-card>
+    <app-mosaic-card icon="📖" [text]="'dashboard.stories' | translate" route="/cuentos" color="orange"></app-mosaic-card>
+    <app-mosaic-card icon="🎬" [text]="'dashboard.multimedia' | translate" route="/multimedia" color="purple"></app-mosaic-card>
+    <app-mosaic-card icon="📝" [text]="'dashboard.reports' | translate" route="/informes" color="black"></app-mosaic-card>
+    <app-mosaic-card icon="📊" [text]="'dashboard.stats' | translate" route="/estadisticas" color="gray"></app-mosaic-card>
+    <app-mosaic-card icon="ℹ️" [text]="'dashboard.info' | translate" route="/informacion" letra="black"></app-mosaic-card>
 </div>

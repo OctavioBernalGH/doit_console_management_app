@@ -1,0 +1,10 @@
+{
+  "dashboard": {
+    "control": "Raumsteuerung",
+    "stories": "Erlebnisgeschichten",
+    "multimedia": "Multimedia",
+    "reports": "Berichte",
+    "stats": "Allgemeine Statistiken",
+    "info": "Informationen"
+  }
+}

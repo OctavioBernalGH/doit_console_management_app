@@ -6,7 +6,11 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Navbar, Footbar, RouterModule],
+  imports: [
+    Navbar, 
+    Footbar, 
+    RouterModule, 
+  ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

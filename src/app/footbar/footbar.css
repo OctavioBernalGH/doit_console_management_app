@@ -1,27 +1,78 @@
+/* footbar.css - Modern & Innovative */
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 footer {
   width: 100%;
-  background: linear-gradient(90deg, #232526 0%, #3a3a3a 100%);
-  color: #cfcfcf;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+  color: #ecf0f1;
   text-align: center;
-  padding: 1.2rem 0;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
+  padding: 1.5rem 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
   margin-top: auto;
-  box-shadow: 0 -2px 8px rgba(30,40,80,0.08);
+  box-shadow: 0 -8px 32px rgba(44, 62, 80, 0.15);
   position: fixed;
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  left: 0;
+  right: 0;
   bottom: 0;
-  z-index: 9;
 }
 
-@media (max-width: 700px) {
+footer::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+footer span {
+  display: inline-block;
+  background: linear-gradient(45deg, #ecf0f1, #bdc3c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+footer:hover span {
+  transform: translateY(-1px);
+  background: linear-gradient(45deg, #ffffff, #ecf0f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   footer {
-    font-size: 0.98rem;
-    padding: 0.8rem 0.3rem;
-    border-radius: 12px 12px 0 0;
+    padding: 1.2rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 1rem 0.8rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.2px;
+  }
+  
+  footer span {
+    line-height: 1.4;
   }
 }

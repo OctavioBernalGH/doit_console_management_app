@@ -1,0 +1,10 @@
+{
+  "dashboard": {
+    "control": "Room control",
+    "stories": "Experiential stories",
+    "multimedia": "Multimedia",
+    "reports": "Reports",
+    "stats": "General statistics",
+    "info": "Information"
+  }
+}
